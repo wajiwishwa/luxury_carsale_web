@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1;
+    color: #333333;
+    overflow-x: hidden;
+}
+.v-header{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.container{
+    max-width: 960px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    text-align: center;
+}
+
+.fullscreen-video-wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.fullscreen-video-wrap video{
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.header-overlay{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    z-index: 1;
+    opacity: 0.6;
+}
+.header-content-text{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.header-content-text h1{
+    margin-top: 15vh;
+    font-size: 4rem;
+    margin-bottom: 0;
+    }
+.header-content-text p{
+    margin-top: 0;
+    font-size: 2rem;
+    display: block;
+    padding-bottom: 1rem;
+}
+.main-logo{
+    top:0;
+    block-size: 15vw;
+}
+.btn{
+    display: inline-block;
+    width: 20vw;
+    
+    background:red;
+    color: #fff;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    font-size: 1.5rem;
+    padding: 1.2rem 2rem;
+    text-decoration: none;
+}
+.btn:hover{
+    background: white;
+    color: red;
+    transition: all 0.5s ease-in;
+    }
+.footer{
+    position: absolute;
+    bottom: 1vh;
+    left: 1vw;
+}
+.footer p{
+    color: white;
+    letter-spacing: 0.5rem;
+    font-size: 0.7rem;
+}
+@media(max-width:720px){
+    *{
+        font-size:0.75rem;
+    }
+    .header-content-text{
+        overflow: scroll;
+    }
+    .header-content-text a{
+        font-size: 1rem;
+    }
+    .btn{
+        width: 25vw;
+    }
+}
+@media(max-width:690px){
+    
+    .container{
+        overflow: scroll;
+        padding-right: 3rem;
+        padding-left: 3rem;
+        }
+    .btn{
+        align-items: center;
+        margin: auto;
+        margin-bottom: 5vh;
+        width: 75vw;
+        display:block;
+        font-size: 2rem;
+        }
+    .header-content-text{
+            overflow: scroll;
+        }
+    .header-content-text h1{
+            font-size: 2.5rem;
+            }
+    .header-content-text p{
+            font-size: 1.5rem;
+            display: block;
+            padding-bottom: 1vh;
+            }
+    i{
+        font-size: 1.5rem;
+    }        
+    .main-logo{    
+            block-size: 25vw;
+            }
+    .footer p{
+            letter-spacing: normal;
+        }
+    .header-content-text a{
+        font-size: 1rem;
+    }
+        
+}
+@media(max-height:460px){
+    .header-content-text{
+        overflow: scroll;
+    }
+}

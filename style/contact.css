@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5rem;
+}
+section{
+    padding: 2rem 2rem;
+    text-align: center;
+    
+}
+.parallax-image-01,.parallax-image-02,.parallax-image-03{
+position: relative;
+background-position: center;
+background-size: cover;
+z-index: -1;
+background-attachment: fixed;
+}
+.parallax-image-01{
+    background-image: url('../img/contact/contact_main.jpg');
+    min-height: 100vh;
+}
+.parallax-image-02{
+    background-image: url('../img/contact/map.jpg');
+    min-height: 50vh;
+}
+.parallax-image-03{
+    background-image: url('../img/contact/footer.jpg');
+    min-height: 50vh;
+}
+.menu{
+    margin-top: 2vh;
+    position: sticky;
+}
+.section-dark{
+    background-color: black;
+    color: white;
+    letter-spacing: 0.5rem;
+}
+.parallax-text{
+    position: absolute;
+    top: 50%;
+    width: 100vw;
+    font-size: 5rem;
+    text-align: center;
+    color:red;
+    letter-spacing: 2rem;
+}
+.contact-form-full{
+    float: left;
+    width: 50%;
+}
+.contact-phone{
+    float: left;
+    width: 50%;
+    }
+.contact-phone ul{
+    list-style: none;
+    font-size: 1.5rem;
+    float: left;
+    letter-spacing: 0.5rem;
+}
+.contact-phone ul li{
+    text-align: left;
+    left: 0;
+    line-height: 2rem;
+}
+.contact-details::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.form-control{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 0.05rem solid rgba(0, 0, 0, 0.3);
+    margin-bottom: 1rem;
+
+}
+form .submit{
+    background-color: red;
+    color: white;
+    height:3vw;
+}
+form .submit:hover{
+    background-color: white;
+    color: red;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+textarea{
+    resize: none;
+    overflow: hidden;
+}
+
+.logo img{
+    height: 20vh;
+}
+.footer{
+    position: relative;
+    bottom: 1vh;
+}
+.footer p{
+    letter-spacing: 0.5rem;
+    font-size: 0.7rem;
+    padding-left: 1rem;
+}
+@media(max-width:690px ){
+    *{
+        font-size: 0.75rem;
+    }
+    p,h2,b,strong,i,input{
+        font-size:1.1rem;
+    }
+    .footer p{
+        letter-spacing: normal;
+    }
+    .parallax-image-01,.parallax-image-02,.parallax-image-03{
+        background-attachment: scroll;
+    }
+    .parallax-image-01{
+        zoom: 0.4;
+    }
+    .contact-form-full{
+        width: 100%;
+    }
+    .contact-phone{
+        float: left;
+        width: 100%;
+        letter-spacing: 0;
+    }
+    .contact-phone ul li{
+        letter-spacing: 0;
+    }
+    .contact-details::before{
+        content: none;
+        padding: 0;        
+    }
+    form .submit{
+        padding: 5vh 0;
+    }
+
+}

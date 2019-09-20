@@ -1,0 +1,74 @@
+.menu{   
+    float: right;
+    padding-right: 2vw;
+}
+.menu nav a{
+    text-decoration: none;
+    padding: 1.5vh 1.5vw;
+    font-size: 1.2rem;
+    color: white;
+}
+.menu nav li{
+    list-style: none;
+    display: inline-block;
+    margin:2vh;
+}
+.sidebar nav .active a {
+    border: 1px solid red;
+    background-color:none;
+}
+.menu nav li a:hover {
+    border: 1px solid red;
+    background-color: red;
+    transition: all 0.5s ease-in;
+}
+nav{
+    height: 50px;
+}
+
+@media(max-width:690px){
+    .sidebar{ 
+        position:fixed;
+        width: 60vw;
+        height: 100vh;
+        background-color:black;
+        left:-60vw;
+        transition: all 0.5s linear;
+        font-size: 1.2rem; 
+    }
+    #sidebar.active{
+        left: 0vw;
+    }
+    .sidebar nav a{
+        text-decoration: none;
+        padding: 0px 0px;
+        
+        color: white;
+    }
+    .sidebar nav li{
+        text-align: left;
+        list-style: none;
+        display: block;
+        padding: 1.5vh 1vw;
+        border-bottom: 0.1rem solid rgba(255, 255, 255, 0.5);        
+    }
+    .sidebar .menu nav .active a  {
+        border:0;        
+    }
+    .sidebar  nav li a:hover {
+        background-color:red;
+        transition: all 0.5s ease-in;
+    }
+    .sidebar .toggle-button{
+        position: absolute;
+        left: 65vw;
+        top: 20px;
+    }
+    .sidebar .toggle-button span{
+        display: block;
+        width: 4rem;
+        height: 0.5rem;
+        background:red;
+        margin: 0.5rem 
+    }
+}

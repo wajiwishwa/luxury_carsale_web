@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5rem;
+}
+section{
+    padding: 2rem 2rem;
+    text-align: justify;
+    
+}
+.parallax-image-01{
+    background-image: url('../img/royce/main_image.jpg');
+    min-height: 100vh;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    background-attachment: fixed;
+}
+.menu{
+    float: right;
+    margin-top: 2vh;
+    
+}
+.car-list ul li{
+    left: 0;
+    display: block;
+    list-style: none;
+    padding:0 5vw;
+}
+
+.car-grid{
+    margin-top: 10vh;
+    padding: 5vh 5vw;
+    border: 1px solid black;
+    box-shadow: 2px 2px;
+}
+#red{
+    border: 1px solid #E40000;
+    color:#E40000;
+    box-shadow: 2px 2px;
+}
+#red p{
+    color: black;
+}
+.car-grid .car-image{
+    float: left;
+    width: 30vw;
+    
+}
+
+.footer{
+    position: relative;
+    bottom: 1vh;
+}
+.footer p{
+    letter-spacing: 0.5rem;
+    font-size: 0.7rem;
+    padding-left: 1rem;
+}
+@media(max-width:690px ){
+    *{
+        font-size: 0.75rem;
+    }
+    p,h2,b,strong{
+        font-size:1.1rem;
+    }
+    .footer p{
+        letter-spacing: normal;
+    }
+    .car-grid .car-image{
+        width: 100vw;
+        zoom: 0.8;
+    }
+    .car-description{
+        box-sizing: border-box;
+        border-block-color: black;
+    }
+    .car-image img{
+        zoom: 0.6;
+    }
+}

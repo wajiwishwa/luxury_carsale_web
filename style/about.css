@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5rem;
+}
+section{
+    padding: 2rem 2rem;
+    text-align: center;
+    
+}
+.parallax-image-01,.parallax-image-02,.parallax-image-03{
+position: relative;
+background-position: center;
+background-size: cover;
+z-index: -1;
+background-attachment: fixed;
+}
+.parallax-image-01{
+    background-image: url('../img/about/about_photofilo.jpg');
+    min-height: 100vh;
+}
+.parallax-image-02{
+    background-image: url('../img/about/vision.jpg');
+    min-height: 30vh;
+}
+.parallax-image-03{
+    background-image: url('../img/about/chairman_message.jpg');
+    min-height: 30vh;
+}
+.menu{
+    margin-top: 2vh;
+    position: sticky;
+}
+.section-dark{
+    background-color: black;
+    color: white;
+}
+.parallax-text{
+    position: absolute;
+    top: 50%;
+    width: 100vw;
+    font-size: 5rem;
+    text-align: center;
+    color:red;
+    letter-spacing: 2rem;
+}
+.footer{
+    position: relative;
+    bottom: 1vh;
+}
+.footer p{
+    letter-spacing: 0.5rem;
+    font-size: 0.7rem;
+    padding-left: 1rem;
+}
+@media(max-width:690px ){
+    *{
+        font-size: 0.75rem;
+    }
+    p,h2,b,strong{
+        font-size:1.1rem;
+    }
+    .footer p{
+        letter-spacing: normal;
+    }
+    .parallax-image-01,.parallax-image-02,.parallax-image-03{
+        background-attachment: scroll;
+    }
+    .parallax-image-01{
+        zoom: 0.6;
+    }
+}
